@@ -124,11 +124,11 @@ Headers:
                 
 Response: Success
 
-<h4>Delete Post</h4>
+<h4>Delete user</h4>
 
 URL: http://localhost:7000/delete
 
-if your id is not refernce with any other table .you can delete user
+if your id is not refernce with any other table .you can delete user.corressponding id is taken from token
 
 Method: DELETE
 
@@ -233,7 +233,7 @@ Response: Response data
 if your id is not refernce with any other table .you can delete post
 
 
-URL: http://localhost:7000/delete?id=8
+URL: http://localhost:7000/deletepost?id=6
 
 Method: DELETE
 
@@ -339,7 +339,7 @@ Response: Response data
 if your id is not refernce with any other table .you can delete comment
 
 
-URL: http://localhost:7000/updateComments?id=7
+URL: http://localhost:7000/deleteComments?id=6
 
 Method: DELETE
 
