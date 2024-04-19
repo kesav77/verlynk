@@ -1,0 +1,41 @@
+{
+    "name": "users",
+    "tableName": "users",
+    "findOnly": [
+      "id",
+      "user_name",
+      "email",
+      "password"
+    ],
+    "entity": {
+      "id": {
+        "type": "id"
+      },
+      "user_name": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string"
+      },
+      "password": {
+        "type": "stringt"
+      }
+    },
+    "rules": [],
+    "belongsTo":{}, 
+  "hasMany": {},
+  "acls": [],
+  "methods": {},
+  "error": [],
+  "options": {
+    "data": {},
+    "condition": [
+      {
+        "active": "1"
+      }
+    ],
+    "contain": [],
+    "sort": []
+}
+  }
+  

@@ -1,0 +1,45 @@
+{
+    "name": "post",
+    "tableName": "post",
+    "findOnly": [
+      "id",
+      "Content",
+      "AuthorID"
+      
+    ],
+    "entity": {
+      "id": {
+        "type": "id"
+      },
+      "Content": {
+        "type": "string"
+      },
+      "AuthorID": {
+        "type": "id"
+      }
+     
+    },
+    "rules": [],
+    "belongsTo": {
+        "users": {
+            "tableName": "users",
+            "key": "id",
+            "bindingKey": "AuthorID"
+          }
+    },
+  "hasMany": {},
+  "acls": [],
+  "methods": {},
+  "error": [],
+  "options": {
+    "data": {},
+    "condition": [
+      {
+        "active": "1"
+      }
+    ],
+    "contain": [],
+    "sort": []
+}
+  }
+  

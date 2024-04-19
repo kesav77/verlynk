@@ -1,0 +1,54 @@
+{
+    "name": "comments",
+    "tableName": "comments",
+    "findOnly": [
+      "id",
+      "post_id",
+      "comments",
+      "AuthorID"
+      
+    ],
+    "entity": {
+      "id": {
+        "type": "id"
+      },
+      "post_id": {
+        "type": "id"
+      },
+      "comments": {
+        "type": "string"
+      },
+      "AuthorID": {
+        "type": "id"
+      }
+     
+    },
+    "rules": [],
+    "belongsTo": {
+        "post": {
+            "tableName": "post",
+            "key": "id",
+            "bindingKey": "post_id"
+          },
+        "users": {
+            "tableName": "users",
+            "key": "id",
+            "bindingKey": "AuthorID"
+          }
+    },
+  "hasMany": {},
+  "acls": [],
+  "methods": {},
+  "error": [],
+  "options": {
+    "data": {},
+    "condition": [
+      {
+        "active": "1"
+      }
+    ],
+    "contain": [],
+    "sort": []
+}
+  }
+  

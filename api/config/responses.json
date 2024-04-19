@@ -1,0 +1,35 @@
+{
+    "200": {
+      "type": "success",
+      "message": "Success"
+    },
+    "201": {
+      "type": "created",
+      "message": "Resource created successfully"
+    },
+    "204": {
+      "type": "deleted",
+      "message": "Resource deleted successfully"
+    },
+    "400": {
+      "type": "Invalid Request",
+      "message": "Invalid request parameters"
+    },
+    "401": {
+      "type": "Unauthorized Requests",
+      "message": "Unauthorized request"
+    },
+    "403": {
+      "type": "Forbidden",
+      "message": "Access forbidden"
+    },
+    "404": {
+      "type": "Resource Not Found",
+      "message": "Requested resource not found"
+    },
+    "500": {
+      "type": "Server Issue",
+      "message": "Internal server error"
+    }
+  }
+  
